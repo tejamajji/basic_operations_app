@@ -1,0 +1,137 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #050609; /* Black background */
+    color: #c9f0ff; /* Columbia Blue for text */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffe66d; /* Naples Yellow for heading */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #ffe66d;
+    padding-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #c9f0ff; /* Columbia Blue for paragraphs */
+}
+
+strong {
+    color: #f97068; /* Bittersweet for strong emphasis */
+    font-weight: 600;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3a6ea5; /* Bice Blue for buttons */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #2c5282; /* Darker Bice Blue for hover effect */
+}
+
+/* Container for the book content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #3a6ea5; /* Bice Blue container background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+/* Styling individual sections */
+.book-details {
+    margin-bottom: 25px;
+}
+
+.book-details p {
+    font-size: 1.2rem;
+    color: #ffe66d; /* Naples Yellow for book details text */
+}
+
+.book-details strong {
+    color: #f97068; /* Bittersweet for book detail emphasis */
+    font-weight: bold;
+}
+
+/* Buttons */
+.button {
+    background-color: #f97068; /* Bittersweet for buttons */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e8594e; /* Darker Bittersweet for hover effect */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.footer a {
+    color: #c9f0ff; /* Columbia Blue for footer links */
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Water bubble cursor effect */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.466);
+    pointer-events: none;
+    animation: bubbleGrow 3s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes bubbleGrow {
+    to {
+        transform: scale(4);
+        opacity: 0.5;
+    }
+}
